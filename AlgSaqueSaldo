@@ -1,0 +1,48 @@
+programa
+{
+	funcao inicio ()
+	{
+		real valor_saque, saldo
+		saldo = 50000
+		inteiro senha_saque, num_agencia, num_conta
+		
+		escreva("Seja bem-vindo! \n")
+		escreva("\n Informe o número da sua agência: ")
+		leia(num_agencia)
+		se( num_agencia >= 1)
+		{
+		    escreva("\n Informe o número da sua conta: ")
+		    leia(num_conta)
+		    se( num_conta >= 1 )
+	    	{
+		        escreva("\n Seus dados: ")
+		        escreva("\n Número da sua conta: "+num_conta)
+		        escreva("\n Número da agência: "+num_agencia)
+		        escreva("\n Seu saldo atual: "+saldo)
+		        escreva("\n \n Nossa! Tudo isso!?")
+		        escreva("\n \n Informe o valor que deseja sacar: ")
+		        leia(valor_saque)
+		
+		        se( valor_saque > 0 e valor_saque <= saldo )
+		        {
+			        saldo = saldo - valor_saque
+			        escreva("\n \n Saque efetuado com sucesso!")
+			        escreva("\n Seu saldo atual é de: R$"+saldo)
+		        }
+		        senao
+		        {
+			        escreva("\n \n Saldo insuficiente.")
+			        escreva("\n Iria fazer o que com tudo isso meu filho??")
+	     	    }
+			}
+			senao
+			{
+				escreva("\n \n Número inválido. Reinicie e tente novamente.")
+			}
+		}
+		senao
+		{
+			escreva("\n \n Número inválido. Reinicie e tente novamente.")
+		}
+	}
+}
