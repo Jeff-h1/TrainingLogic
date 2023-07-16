@@ -1,0 +1,21 @@
+programa
+{
+    // Conversor de reais em dolares
+    // Rotina que converte um valor de reais em dólares (sobre cotação)
+    // Programa feito em Portugol Studio Mobile (app)
+	funcao inicio ()
+	{
+		inteiro valor_real = 0
+		inteiro cotacao_dolar = 0
+		inteiro conversao = 0
+		
+		escreva("Algoritimo de conversão de reais em dolares. \n")
+		escreva("Informe o valor disponível em reais (para comprar dólares): \n R$")
+		leia(valor_real) 
+		escreva("Informe o valor do dólar em reais (cotação do dia): \n R$")
+		leia(cotacao_dolar)
+		conversao = valor_real / cotacao_dolar
+		escreva("Com essa quantia será possível comprar: \n US$"+conversao)
+		escreva("\n Boa viajem! \n")
+	}
+}

@@ -1,0 +1,33 @@
+programa
+{
+	// CalculadorFatorial
+	// Rotina que retorna o fatorial de um número
+	// Programa feito em Portugol Studio Mobile (app)
+	funcao inicio ()
+	{
+		inteiro numero, fatorial, contador
+		contador = 1
+		fatorial = 1
+		
+		escreva("-------------------------------\n")
+		escreva("      Calculador fatorial      ")
+		escreva("\n-------------------------------\n")
+		
+		escreva("Digite um número: ")
+		leia(numero)
+		
+		se (numero > 0)
+		{
+			enquanto (contador <= numero)
+			{
+				fatorial = fatorial * contador
+				contador = contador + 1
+			}
+			escreva("\nO fatorial de ",numero," é: ",fatorial)
+		}
+		senao
+		{
+			escreva("Número inválido")
+		}
+	}
+}

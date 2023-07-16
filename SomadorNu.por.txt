@@ -1,0 +1,29 @@
+programa
+{
+	// SomadorNumerico
+	// Rotina que soma valores e retorna o maior digitado
+	// programa feito em Portugol Studio Mobile (app)
+	funcao inicio ()
+	{
+		inteiro n, soma = 0
+		inteiro maior = 0
+		inteiro cont = 1
+		
+		escreva("--------------------------")
+		escreva("\n    Somador numérico    ")
+		escreva("\n--------------------------\n")
+		enquanto (cont <= 5)
+		{
+			escreva("Digite o ", cont, "° valor: ")
+			leia(n)
+			cont = cont + 1
+			soma = soma + n
+			se (n > maior)
+			{
+				maior = n
+			}
+		}
+		escreva("\nA soma dos valores foi: ", soma)
+		escreva("\nO maior valor digitado foi: ", maior)
+	}
+}

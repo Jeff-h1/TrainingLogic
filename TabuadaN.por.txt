@@ -1,0 +1,31 @@
+programa
+{
+	// TabuadaN
+	// Rotina que retorna a tabuada de 10 de um número 
+	// Programa feito em Portugol Studio Mobile (app)
+	funcao inicio ()
+	{
+		inteiro contador, numero, r
+		contador = 1
+		
+		escreva("-------------------------------\n")
+		escreva("         Tabuada até 10          ")
+		escreva("\n-------------------------------\n")
+		
+		escreva("Digite um número para fazer a tabuada: ")
+		leia(numero)
+		se (numero > 0)
+		{
+			enquanto (contador < 11)
+			{
+				r = numero * contador
+				escreva(numero, "x", contador, "=", r, "\n")
+				contador = contador + 1
+			}
+		}
+		senao
+		{
+			escreva("Número inválido")
+		}
+	}
+}
