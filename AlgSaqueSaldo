@@ -36,7 +36,7 @@ programa
 		        {
 			        escreva("\n \n Saldo insuficiente.")
 			        escreva("\n Iria fazer o que com tudo isso meu filho??")
-	     	    }o
+	     	    }
 			}
 			senao
 			{
